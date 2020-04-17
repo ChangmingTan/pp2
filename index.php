@@ -21,7 +21,25 @@ error_reporting(E_ALL);
 <body>
 <h1>Pair Program 2</h1>
 <?php
-echo "<h2>PHP Array Practice.</h2>"
+echo "<h2>Step 1:</h2>";
+echo "<b>PHP Array Practice.</b>";
+
+echo "<h2>Step 2:</h2>";
+echo "<b>Define an array \$numbers, which contains 7, 9, 8, 9, 8, 8, 6. In the same PHP block, write a
+function printArr() that takes an array as a parameter and prints the array, one item per
+line. Call your function and pass it the \$numbers array. Test your code and then commit
+your changes.</b><br><br>";
+
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+function printArr($numbers)
+{
+    foreach ($numbers as $value) {
+        echo "$value<br>";
+    }
+}
+
+printArr($numbers);
+
 ?>
 </body>
 </html>
