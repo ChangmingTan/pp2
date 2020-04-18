@@ -31,13 +31,15 @@ line. Call your function and pass it the \$numbers array. Test your code and the
 your changes.</b><br><br>";
 
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
-include("functions.php");
 
 echo "<h2>Step 3:</h2>";
 echo "<b>Move your print function into an include file called functions.php in the same directory.
 Make sure it still works. Commit your changes. This time you will need to add two files
 to the staging area, because both files have changed: functions.php and index.php. You
-only need one commit and one push.</b>";
+only need one commit and one push.</b><br><br>";
+
+include("functions.php");
+
 
 ?>
 </body>
