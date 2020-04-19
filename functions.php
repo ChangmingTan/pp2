@@ -49,4 +49,26 @@ function removeDups($numbers)
 
 removeDups($numbers);
 
+
+echo "<h2>Step 6:</h2>";
+echo "<b>In your include file, define a function called distribution() that takes an array as a
+parameter and returns an associative array with each value from the original array, and 
+the number of times that value occurs in the original array. The keys should be sorted.
+So, given the \$numbers array: [7, 9, 8, 9, 8, 8, 6]
+distribution() would return [6=>1, 7=>1, 8=>3, 9=>2]</b><br><br>";
+
+function distribution($numbers)
+{
+    //array_count_values() returns an array using the values of array as keys and their frequency in array as values.
+    $numbers = array_count_values($numbers);
+
+    //Sorts an array by key, maintaining key to data correlations. This is useful mainly for associative arrays.
+    ksort($numbers);
+
+    //print_r — Prints human-readable information about a variable
+    print_r($numbers);
+}
+
+distribution($numbers);
+
 ?>
